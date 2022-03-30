@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto:ital@0;1&display=swap');
+body {
+	font-family: 'Ramaraja', serif;
+}
+
+.container {
+	width: 95%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hex-colors{
+	text-align: center;
+}
+
+.hex-colors h1 {
+	font-size: 3rem;
+	animation: colorchange 5s infinite alternate;
+}
+
+.hex-colors h2 {
+	font-size: 2.5rem;
+	margin-top: 15%;
+}
+
+.hex-colors h1, h2 {
+	font-weight:  100;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+	from {
+	  -webkit-filter: hue-rotate(0deg);
+	}
+	to {
+	  -webkit-filter: hue-rotate(-360deg);
+	}
+  }
